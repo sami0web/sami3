@@ -12,15 +12,23 @@ function Users() {
       .then((data) => setUsers(data.data));
   }, []);
 
+const ChangeName = ()=> {      
+
+
+
+             }
+
+
   return (
     <div className="cont">
       <h1 className="h1">Liste des utilisateurs</h1>
+      <button  onClick={ChangeName}>  Modifier      </button>
 
       <div className="cartes">
         {Users.map((user, index) => (
           <div key={Users.id}>
             <CardComponent
-              Name={user.first_name + ' ' + user.last_name}
+              Name={user.first_name + ' + user.last_name}
               id={user.id}
               Email={user.email}
               img={user.avatar}
