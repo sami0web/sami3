@@ -3,11 +3,12 @@ import './Body1.css';
 import UserList from './UserList';
 import Carousel2 from './Carousel2';
 import Users from './Users';
+import UsersRudx from './UsersRudx';
 
 function Body1() {
   return (
     <div className="Body1">
-        <Users/>
+        <UsersRudx/>
     </div>
   );
 }

@@ -8,7 +8,7 @@ function CardComponent(props) {
         src={props.img}
         alt="image de prfl"
       />
-      <h3>User Name :{props.Name.title +" " + props.Name.first+" "+props.Name.last}</h3>
+      <h3>User Name :{props.Name}</h3>
       <h3>Id User : {props.id} </h3> 
       <p>User Phone: {props.Phone}</p>
       <p>User Email : {props.Email}</p>

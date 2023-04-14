@@ -7,9 +7,17 @@ import NotFound from './components/NotFound';
 import Navbar from './components/Navbar';
 import Body1 from './components/Body1';
 import Carousel from './components/Carousel2';
+import { Provider } from 'react-redux';
+import UserReducer from './components/Store/Reducer';
+import { createStore } from 'redux';
 
  function App() {
+
+  const store = createStore(UserReducer);
   return (
+
+
+    <Provider store={store}>
     <div className="App">
 
         <Navbar />
@@ -27,7 +35,7 @@ import Carousel from './components/Carousel2';
 
       
     </div>
-
+    </Provider>
    
   );
 }
